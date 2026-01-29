@@ -46,10 +46,7 @@ pip install numpy pandas scikit-optimize scikit-learn
 **Key Dependencies:**
 
 * `numpy`: Matrix and vector operations.
-* 
-`scikit-optimize` (`skopt`): Used for Bayesian Optimization (SMBO) of SFC parameters.
-
-
+* `scikit-optimize` (`skopt`): Used for Bayesian Optimization (SMBO) of SFC parameters.
 * `pandas`: For data handling and result export.
 
 ## 🚀 Quick Start
@@ -63,32 +60,11 @@ python run_hsfc.py
 
 By default, this script will:
 
-1. Generate synthetic data (e.g., 2D/3D points and window queries).
-2. Construct the **MSP-Tree** based on data variance and query workload.
-3. Perform **Bayesian Optimization** to learn optimal local SFCs for leaf nodes.
-4. Execute window queries using the **Query Splitting** strategy.
-5. Output the Average Query Time and False Positive Rate.
+1. Construct the **MSP-Tree** based on data variance and query workload.
+2. Perform **Bayesian Optimization** to learn optimal local SFCs for leaf nodes.
+3. Execute window queries using the **Query Splitting** strategy.
+4. Output the Average Query Time and False Positive Rate.
 
-### Customizing the Experiment
-
-You can modify the parameters in `run_hsfc.py` to test different configurations:
-
-```python
-# Example configuration in run_hsfc.py
-partitioning_config = {
-    'min_points': 5000,      # Minimum points to stop splitting
-    'max_depth': 4,          # Max depth of MSP-Tree
-    'num_buckets': 20,       # Buckets for split searching
-    'penalty': 2.0,          # Cross-boundary query penalty
-    'alpha_start': 0.3       # Weight factor for balance vs. query cost
-}
-
-experiment = HSFCExperiment(
-    num_iterations=20,       # Number of Bayesian Optimization iterations
-    train_ratio=0.1          # Ratio of queries used for training
-)
-
-```
 
 ## 📊 Core Components
 
