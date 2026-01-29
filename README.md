@@ -23,6 +23,8 @@ The project is structured as follows:
 
 ```text
 .
+├── Data/
+│   └── OSMdata_large.json   # Real-world OSM dataset for evaluation
 ├── hsfc_experiment.py       # Core controller for HSFC experiments
 ├── spatial_partitioning.py  # Implementation of the MSP-Tree (Multi-Level Spatial Partitioning)
 ├── sfc_optimization.py      # Bayesian Optimization logic for local SFC parameter learning
