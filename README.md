@@ -15,7 +15,6 @@ Key components of this framework include:
 **Local Learned SFCs:** Independent monotonic SFCs learned via Bayesian Optimization for each subspace.
 **Recursive Query Splitting:** A proactive strategy leveraging weight pruning to decompose window queries into subqueries with tighter projection intervals, significantly reducing false positives.
 
-Experiments show that HSFC achieves **1.5x - 8.8x** reductions in query latency and reduces false positives by **27% - 88%** compared to state-of-the-art methods.
 
 ## 📂 Project Structure
 
