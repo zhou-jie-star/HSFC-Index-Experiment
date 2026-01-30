@@ -8,7 +8,7 @@ This repository contains the official implementation of the experimental framewo
 
 ## 📖 Introduction
 
-**HSFC** (Hybrid Space-Filling Curve) is a learned multidimensional indexing framework designed to address the limitations of fixed mapping strategies (like Z-curve) and single global learned mappings. HSFC combines **Multi-level Spatial Partitioning (MSP)** with **Subspace-level Curve Optimization** to adapt to complex data distributions and diverse query workloads.
+**HSFC** (Hybrid Space-Filling Curve) is a learned multidimensional indexing framework designed to address the limitations of fixed mapping strategies (like Z-curve) and single global learned mappings. HSFC combines **Multi-level Spatial Partitioning Tree (MSP-Tree)** with **Subspace-level Curve Optimization** to adapt to complex data distributions and diverse query workloads.
 
 Key components of this framework include:
 **MSP-Tree:** A query-aware spatial partitioning tree that recursively divides the global data space into localized subspaces, aligning boundaries with high-frequency query regions.
